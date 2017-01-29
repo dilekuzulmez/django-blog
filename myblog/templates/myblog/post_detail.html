@@ -1,14 +1,13 @@
 {% extends 'myblog/base.html' %}
-
 {% block content %}
   <div class="col-lg-8 col-md-8">
-    {% for post in posts %}
+    {% if post.yayinlanma_tarihi %}
       <div class="blogBox">
           <h1 class="blogTitle"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.baslik }}</a></h1>
           <div class="blogText">{{ post.yazi|linebreaks }}</div>
           <div class="blogDate">published: {{ post.yayinlanma_tarihi }}</div>
       </div>
-    {% endfor %}
+    {% endif %}
   </div>
   <div class="col-lg-4 col-md-4">
 

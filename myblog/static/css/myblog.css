@@ -1,0 +1,17 @@
+.pageTitle{
+  font-family: 'Lobster';
+  font-size:36px;
+  color:#2e2e2e;
+  padding: 50px 15px;
+}
+body{
+  font-family: 'Lobster'
+}
+
+
+.blogBox{
+  background: rgba(0,0,0, 0.1);
+  margin:5px;
+  padding: 15px;
+  box-shadow: 1px 0px 0px rgba(0,0,0, 0.2);
+}
