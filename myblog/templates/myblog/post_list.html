@@ -6,10 +6,12 @@
         <div>
             <h1><a href="">Blog</a></h1>
         </div>
-
-        <div>
-            <h2><a href="">Django Blog</a></h2>
-        </div>
-
+        {% for post in posts %}
+          <div>
+              <p>published: {{ post.yayinlanma_tarihi }}</p>
+              <h1><a href="">{{ post.baslik }}</a></h1>
+              <p>{{ post.yazi|linebreaks }}</p>
+          </div>
+        {% endfor %}
     </body>
 </html>
