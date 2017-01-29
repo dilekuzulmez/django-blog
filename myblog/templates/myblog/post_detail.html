@@ -3,6 +3,7 @@
   <div class="col-lg-8 col-md-8">
     {% if post.yayinlanma_tarihi %}
       <div class="blogBox">
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
           <h1 class="blogTitle"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.baslik }}</a></h1>
           <div class="blogText">{{ post.yazi|linebreaks }}</div>
           <div class="blogDate">published: {{ post.yayinlanma_tarihi }}</div>
